@@ -20,14 +20,14 @@
         <legend>Student Details</legend>
         <!--The title of a field area in the form-->
         <p><label for = "studentid">Student Id</label>
-            <input type="text" name="studentid" size="10" required="required"
+            <input type="text" name="student" size="10" required="required" id="studentid"
                pattern="[0-9]{7,10}" title="Can't be more than 9 numbers"/>
         </p>
         <!--Gets user to input student id, but can't be more than 9 numbers-->
         <p><label for = "name">Given Name</label>
-            <input type="text" name="name"  title="Can only be letter A through Z" size="20" required="required"/>
+            <input type="text" name="name" id="name" title="Can only be letter A through Z" size="20" required="required"/>
            <label for = "family"> Family Name</label>
-             <input type="text" name="family" maxlength="15" size="20" required="required"/> </p>
+             <input type="text" id="family" name="family" maxlength="15" size="20" required="required"/> </p>
         <!--Gets user to enter name and family name, and checks if it is valid or not, ie only letters-->
     </fieldset>
     <fieldset>
@@ -58,15 +58,15 @@
         <!--The title of a field area in the form-->
         <p>
             <label for="html">HTML</label> 
-            <input type="checkbox" id="html" name="issue" value="html" checked="checked"/>
+            <input type="checkbox" id="html" name="issue" value="html" checked="checked">
           <label for="CSS">CSS</label>
             <input type="checkbox" id="CSS" name="issue" value="CSS"/>
         <label for="JavaScript">JavaScript</label>
-            <input type="checkbox" id="JavaScript" name="issue" value="JavaScript"/>
+            <input type="checkbox" id="JavaScript" name="issue" value="JavaScript">
         <label for = "PHP">PHP</label>
-            <input type="checkbox" id="PHP" name="issue" value="PHP"/>
+            <input type="checkbox" id="PHP" name="issue" value="PHP">
         <label for = "MySQL">MySQL</label>
-            <input type="checkbox" id="MySQL" name="issue" value="MySQL"/>
+            <input type="checkbox" id="MySQL" name="issue" value="MySQL">
         </p>
         <!--Gets the user to select 1 or multiple options out of the 5 listed. HTML is selected by default-->
         <p>
@@ -74,26 +74,26 @@
             <!--Title of a text box-->
         </p>
         <p>
-            <textarea id="description" name="description" rows="5" cols="40" placeholder="Write description of your issue..."></textarea>
+            <textarea id="description" name="description" id="des" rows="5" cols="40" placeholder="Write description of your issue..."></textarea>
         </p>
         <!--Gets the user to type in a description of their issue. Place holder prompts.-->
     </fieldset>
     <fieldset>
         <legend>Preferred Date/Time</legend>
         <p>
-            <label for = "date">Date</label>
-              <input type="date" name="date" size="10" placeholder="dd/mm/yyyy"/>
+            <label for = "D">Date</label>
+              <input type="date" id= "D" name="date" size="10" placeholder="dd/mm/yyyy">
         </p>
         <!--Gets user to select a date through a built in calander selector-->
         <p>
-            <label for = "time">Time</label>
-              <input type="time" name="time" size="10" placeholder="00:00"/>
+            <label for = "T">Time</label>
+              <input type="time" id="T" name="time" size="10" placeholder="00:00">
         </p>
         <!--Gets user to choose a time from built in clock-->
     </fieldset>
 
-    <input type= "submit" value="Register"/>
-	<input type= "reset" value="Reset Form"/>
+    <input type= "submit" value="Register">
+	<input type= "reset" value="Reset Form">
 </form>
 </body>
 </html>
